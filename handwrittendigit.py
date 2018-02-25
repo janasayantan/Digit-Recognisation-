@@ -46,7 +46,7 @@ model.summary()
 #step-6 fitting the model
 h=model.fit(x_train, y_train, batch_size=128,
           epochs=10, verbose=1,validation_split=0.25)
-#checking the accuracy in training set
+#checking the accuracy in training set by plotting graph using matplotlib
 import matplotlib.pyplot as plt
 plt.plot(h.history['acc'])
 plt.plot(h.history['val_acc'])
